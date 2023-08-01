@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/aditechdev/to-do-backend-node/issues"
   },
-  "homepage": "https://github.com/aditechdev/to-do-backend-node#readme"
+  "homepage": "https://github.com/aditechdev/to-do-backend-node#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
