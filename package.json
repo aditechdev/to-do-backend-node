@@ -1,0 +1,30 @@
+{
+  "name": "to-do-backend-node",
+  "version": "1.0.0",
+  "description": "Todo app build using node, javascript, express, and mongodb. This app has authentication where User can login and logout and create notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditechdev/to-do-backend-node.git"
+  },
+  "keywords": [
+    "Todo",
+    "App",
+    "NodeJs",
+    "Javascript",
+    "Express",
+    "Mongodb",
+    "crud",
+    "authentication",
+    "jwt"
+  ],
+  "author": "aditechdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aditechdev/to-do-backend-node/issues"
+  },
+  "homepage": "https://github.com/aditechdev/to-do-backend-node#readme"
+}
