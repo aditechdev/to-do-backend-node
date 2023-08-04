@@ -31,6 +31,34 @@ const UserSchema = new mongoose.Schema({
     }
 
 });
+const UserSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: [true, 'Please enter user name']
+    },
+    email: {
+        type: String,
+        required: [true, 'Please add email'],
+        unique: true,
+        match: [
+            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            'Please add valid email'
+        ]
+    },
+    password: {
+        type: String,
+        required: [true, 'Please add password'],
+        minLength: 6,
+        select: false
+    },
+    resetPasswordToken: String,
+    resetPasswordExpire: Date,
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }
+
+});
 
 // Encrypt password using bcrypt
 UserSchema.pre('save', async function (next) {
